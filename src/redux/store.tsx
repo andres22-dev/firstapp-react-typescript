@@ -1,4 +1,3 @@
-// import nameReducer from './nameTables.js';
 import {
   createStore,
   combineReducers,
@@ -6,11 +5,13 @@ import {
   compose,
 } from 'redux';
 import thunk from 'redux-thunk';
-// import postReducer from './postReducer';
+import userReducer from './users';
 
 const composeEnhancers = compose;
 
 const rootReducer = combineReducers({
+
+  dataUsers: userReducer
   
 });
 
